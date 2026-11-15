@@ -175,9 +175,10 @@ To retrain the models from the public games (README.md has the details):
     python scripts/train.py set --seed 0       # GPU
     python scripts/train.py set --seed 1
 
-On our machine, retraining from a fresh clone reproduced the boosted model and the first set-model
-seed bit for bit. GPU training can still differ slightly on other GPUs, drivers or library builds,
-which is why the trained models are in the repository.
+On our machine, retraining from a fresh clone reproduced all three models: both set-model files
+bit for bit, and a boosted model that gives identical scores. GPU training can still differ
+slightly on other GPUs, drivers or library builds, which is why the trained models are in the
+repository.
 
 The prediction script reads the match tracking, writes the submission and prints one line. No
 match data is stored in the repository. The repository contains the code behind the submitted

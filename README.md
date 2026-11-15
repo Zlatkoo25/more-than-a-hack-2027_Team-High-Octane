@@ -47,9 +47,9 @@ the script also runs their validator on the file and reports the result in its o
 ## Retrain the models from scratch
 
 The models in `models/` were produced by the commands below. On our machine, retraining from a
-fresh clone reproduced the boosted model and the first set-model seed bit for bit. GPU training can
-still differ slightly on other GPUs, drivers or library builds, which is why the trained models are
-part of the repository.
+fresh clone reproduced all three models: both set-model files bit for bit, and a boosted model
+that gives identical scores. GPU training can still differ slightly on other GPUs, drivers or
+library builds, which is why the trained models are part of the repository.
 
 ```
 git clone https://github.com/metrica-sports/sample-data public_data/metrica
