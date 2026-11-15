@@ -1,0 +1,53 @@
+# This repository is public. Match data, answer keys and submissions must never be tracked.
+
+# -- competition match data (licensed, not redistributable) --------------------------------------
+data/
+*.mp4
+*.mkv
+*.avi
+*_atd.txt
+*_atd.xml
+*_homography.csv
+*_smart_tagging.xml
+
+# -- answer keys and submissions -----------------------------------------------------------------
+*_possession_gt*.csv
+submissions/
+results/
+
+# -- public games used for training (download them, see README; not redistributed here) ----------
+public_data/
+sample_data/
+
+# -- derived data --------------------------------------------------------------------------------
+cache/
+*.npy
+*.npz
+*.log
+
+# -- local files ---------------------------------------------------------------------------------
+*.eml
+*.msg
+*.pdf
+private/
+.env
+.env.*
+
+# -- editors and build artifacts -----------------------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+
+# The three trained models in models/ ARE tracked: they are what makes the submission file
+# reproducible exactly. Anything else that lands there (partial saves) is not.
+models/*
+!models/final_v3.pkl
+!models/final_set_s0.pt
+!models/final_set_s1.pt
